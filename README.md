@@ -19,13 +19,15 @@ your runner, and wrap the browser-backed `BaseComputer` you already use.
 ## Install
 
 ```bash
-pip install google-adk adk-rrwebcloud
+pip install google-adk git+https://github.com/rrweb-cloud/adk-rrwebcloud.git
 ```
+
+The package is not published on PyPI yet, so install from GitHub for now.
 
 For local development in this workspace:
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/rrweb-cloud/adk-rrwebcloud.git
 cd adk-rrwebcloud
 uv sync
 uv run --with playwright python -m playwright install chromium
@@ -72,6 +74,9 @@ uv run --with playwright python examples/live_smoke.py --url https://www.google.
 
 It prints JSON with the final page title, URL, and rrweb Cloud recording
 metadata.
+
+Before running it, export `RRWEB_CLOUD_RECORDING_PUBLIC_KEY` and
+`RRWEB_CLOUD_RECORDING_SECRET_KEY`, or place them in a local `.env` file.
 
 ## Project Layout
 
