@@ -25,7 +25,8 @@ pip install google-adk adk-rrwebcloud
 For local development in this workspace:
 
 ```bash
-cd /Users/justin/repos/openclaw-rrweb/adk-rrwebcloud
+git clone <your-repo-url>
+cd adk-rrwebcloud
 uv sync
 uv run --with playwright python -m playwright install chromium
 ```
@@ -65,7 +66,7 @@ invocation/session persistence point. You usually need both.
 This repo includes a runnable sample:
 
 ```bash
-cd /Users/justin/repos/openclaw-rrweb/adk-rrwebcloud
+cd adk-rrwebcloud
 uv run --with playwright python examples/live_smoke.py --url https://www.google.com
 ```
 
@@ -74,10 +75,10 @@ metadata.
 
 ## Project Layout
 
-- [`/Users/justin/repos/openclaw-rrweb/adk-rrwebcloud/src/adk_rrwebcloud/__init__.py`](/Users/justin/repos/openclaw-rrweb/adk-rrwebcloud/src/adk_rrwebcloud/__init__.py)
-- [`/Users/justin/repos/openclaw-rrweb/adk-rrwebcloud/src/adk_rrwebcloud/plugin.py`](/Users/justin/repos/openclaw-rrweb/adk-rrwebcloud/src/adk_rrwebcloud/plugin.py)
-- [`/Users/justin/repos/openclaw-rrweb/adk-rrwebcloud/src/adk_rrwebcloud/computer.py`](/Users/justin/repos/openclaw-rrweb/adk-rrwebcloud/src/adk_rrwebcloud/computer.py)
-- [`/Users/justin/repos/openclaw-rrweb/adk-rrwebcloud/examples/live_smoke.py`](/Users/justin/repos/openclaw-rrweb/adk-rrwebcloud/examples/live_smoke.py)
+- [`src/adk_rrwebcloud/__init__.py`](./src/adk_rrwebcloud/__init__.py)
+- [`src/adk_rrwebcloud/plugin.py`](./src/adk_rrwebcloud/plugin.py)
+- [`src/adk_rrwebcloud/computer.py`](./src/adk_rrwebcloud/computer.py)
+- [`examples/live_smoke.py`](./examples/live_smoke.py)
 
 ## Why a separate project
 
